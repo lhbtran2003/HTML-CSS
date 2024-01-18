@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign in</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>ĐĂNG KÍ HỌC VIÊN</h1>
+        <form action="/signin.html" method="post">
+            <div>
+                <lable for="username">Họ và tên</lable> <!--for dùng để liên kết label vs trường dữ liệu tên username-->
+                <input type="text" id="username" name="username">
+                <br><br>
+                <lable>Ngày sinh</lable>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <label>Giới tính</label>
+            <input type="radio" name="gender" value="male" checked>
+            <lable>Nam</lable>
+            <input type="radio" name="gender" value="female">
+            <label>Nữ</label><br>
+            <lable>Địa chỉ</lable>
+            <input type="text" name="address"><br>
+            <br>
+            <label>Lớp</label>
+            <select>
+                <option value="-chọn lớp-"checked>-chọn lớp-</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+            <br><br>
+            <lable>Email</lable>
+            <input type="text" name="email">
+            <br><br>
+            <lable>Điện thoại</lable>
+            <input type="text" name="tel">
+        </form>
+    </body>
+</html>
+
+
