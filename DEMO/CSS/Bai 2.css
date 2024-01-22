@@ -1,0 +1,11 @@
+body {
+    font-family: Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight:300;
+}
+.p1, .p2, .p3 {
+    font-weight: 500;
+}
+.TrieuTien,.HanQuoc,.Taptran {
+    text-decoration: underline;
+    color:blue
+}
