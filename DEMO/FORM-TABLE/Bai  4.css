@@ -1,0 +1,13 @@
+table {
+    border:black 1px;
+    border-style: solid;
+    border-collapse: collapse;
+    width: 60%; /*CHIỀU RỘNG CỦA BẢNG TỪ TRÁI SANG PHẢI LÀ 40% (100% NGUYÊN MÀN HÌNH)*/
+}
+ th,td /*ĐỊNH DẠNG CHO Ô TIÊU ĐỀ VÀ Ô DỮ LIỆU*/ {
+    border: 1px solid black;
+    width: 33.33%; /*CHIA ĐỘ RỘNG ĐỀU CHO 3 CỘT (TRONG KHOẢNG 40% CỦA TABLE), NẾU 4 CỘT THÌ LÀ 25%*/
+} 
+th {
+    background-color: aqua;
+}  
