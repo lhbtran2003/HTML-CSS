@@ -1,0 +1,111 @@
+:root {
+    --grid_padding: 40px;
+    --top_right_padding: 20px;
+    --font_size: 20px;
+    --margin_right: 3px;
+    --margin_left:10px;
+    --footer_margin_detail: 10px;
+}
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 0.8px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'item1 item2'
+                         'item3 item3';
+}
+.top_left {
+    grid-area: item1;
+    padding-top: var(--grid_padding);
+    padding-left: var(--grid_padding);
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    
+}
+.top_left h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-bottom: var(--margin_left);
+}
+.top_left p {
+    width: 500px;
+    font-size: var(--font_size);
+    margin-top: var(--margin_left);
+}
+.top_right {
+    grid-area: item2;
+    display: flex;
+    padding-top: var(--grid_padding);
+    padding-left: var(--grid_padding);
+}
+.top_right--title,
+.top_right--colon,
+.top_right--content {
+    padding-right: var(--top_right_padding);
+    font-size: var(--font_size);
+}
+.top_right--title p, 
+.top_right--colon p,
+.top_right--content p {
+    margin: var(--margin_right);
+}
+.top_right--title {
+    font-weight: 530;
+}
+.top_right--content {
+    color: #2a664e;
+}
+.footer {
+    grid-area: item3;
+}
+.footer__androi1,
+.footer__angular2,
+.footer__bootstrap3,
+.footer__vue4,
+.footer__react5,
+.footer__mongodb6,
+.footer__lavarel7,
+.footer__nodejs8 {
+    display: flex;
+    border: 2px solid #ede3cc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 #ede3cc;
+    margin: 5px;
+}
+.footer__top {
+    display: flex;
+    padding-left: var(--grid_padding) ;
+    padding-top: 140px;
+}
+.footer__bottom {
+    display: flex;
+    padding-left: 250px;
+    padding-right: 250px ;
+}
+
+img {
+    width: 55px;
+    height: 50px;
+    /* margin-right: var(--footer_margin_detail); */
+    margin: var(--footer_margin_detail);
+}
+.right_content {
+    margin-right: var(--footer_margin_detail);
+
+}
+.right_content h5 {
+    font-size: var(--font_size);
+    font-weight: 530;
+    margin-top: var(--footer_margin_detail);
+    margin-bottom: var(--footer_margin_detail);
+}
+.right_content p {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 300;
+}
