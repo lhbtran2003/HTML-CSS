@@ -8,14 +8,15 @@
 }
 .item1 {
     grid-area: item1;
-    background-color: blueviolet;
+    background-color:indigo;
 }
 .item2 {
     grid-area: item2;
+    max-width: 100%;
 }
 .item3 {
     grid-area: item3;
-    background-color:blue;
+    background-color:rgb(24, 24, 137);
 }
 .item4 {
     grid-area: item4;
@@ -23,6 +24,7 @@
 }
 .item5 {
     grid-area: item5;
+    max-width: 100%;
 }
 .item6 {
     grid-area: item6;
@@ -30,6 +32,7 @@
 }
 .item7 {
     grid-area: item7;
+    max-width: 100%;
 }
 .item8 {
     grid-area: item8;
@@ -37,6 +40,7 @@
 }
 .item9 {
     grid-area: item9;
+    max-width: 100%;
 }
 img {
     width: 100%;
@@ -90,5 +94,42 @@ nav {
     height: 550px;
     object-fit: cover;
     background-image: url('/img/b3.jpg');
+    color:aliceblue;
+}
+
+.mobile-menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+     .right-word {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color:indigo;
+        text-align: center;
+     }
+     .mobile-menu-icon {
+        display: block;
+      }
+      .right-word.show {
+        display:flex;
+        flex-direction: column;
+      }
+      .right-word h3 {
+        margin: 10px 0;
+        width: 100%;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .left-word {
+        justify-content: flex-start;
+      }
 
 }
