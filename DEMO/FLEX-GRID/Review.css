@@ -1,0 +1,40 @@
+body {
+    background-color: #000629;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas:'item1 item1'
+                        'item2 item3';
+}
+.header {
+    grid-area: item1;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 80px 0;
+}
+
+.header__letter1, .header__letter2 {
+    margin-right: 10px;
+    font-size: x-large;
+}
+.header__letter1 {
+    color: white;
+}
+.header__letter2 {
+    color: #4326f7;
+}
+.left {
+    grid-area: item2;
+    color: white;
+}
+.left__cell, .right__cell {
+    margin: 30px;
+    padding: 30px;
+    border: 2px black solid;
+    border-radius: 15px;
+    background: #1f32cf36;
+
+}
+.right {
+    grid-area: item3;
+    color: white;
+}
